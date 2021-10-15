@@ -1,6 +1,7 @@
 import overviewData from '../../initial_data.json';
 import Chart from './OverviewSection/Chart';
 import Intro from './OverviewSection/Intro';
+import SupportRequests from './OverviewSection/SupportRequests';
 import Terms from './OverviewSection/Terms';
 
 const Overview = () => {
@@ -15,11 +16,7 @@ const Overview = () => {
                   ))}
                   <Terms terms={terms} />
             </section>
-
-
- 
-
-
+            <SupportRequests />
         </div>
       );
 }

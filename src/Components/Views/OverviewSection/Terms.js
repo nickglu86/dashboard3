@@ -1,9 +1,7 @@
-const Terms = props  => {
-    
+const Terms = props  => {   
     const termsArr = props.terms;
-    {console.log({termsArr})}
     return ( 
-        <div className="terms">
+        <div className="terms box">
             <ul>
                 {termsArr.map( (term, index) => (
                     <li> TERM {index + 1}  <b>{term}</b></li>

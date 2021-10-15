@@ -5,7 +5,7 @@
     const chartTheme = chartGeneral ? 'blue' : 'red';
     const followers = props.followers;
     return(
-        <div className={`chart ${chartTheme}`} >
+        <div className={`chart box ${chartTheme}`} >
             <h3>{chartTitle}</h3>
             <div className="data">
                 <div>
