@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  font-size: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height:2.188rem;
+  padding: 0 0.25rem;
+  border: solid 0.5px #ebedf8;
+}
+header .logo{
+  height:  1.281rem;
+  width: 1.125rem;
+  margin: 0.5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./Components/Images/logo@3x.png);
+}
+main{
+  display: flex;
+  background-color: #fafbfc;
+
+}
+ul.tabs{
+  width: 2.656rem;
+  /* position: absolute; */
+  margin:  0;
+   padding: 1rem 0;  
+  height: 100%;
+  background-color: #fff;
+  border: solid 0.5px #ebedf8;
+}
+ul.tabs li{
+  padding: 0.9rem;
+  height: 0.656rem;
+  width: 0.719rem;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+  cursor:  pointer;
+}
+li.overview{
+    background-image: url(./Components/Images/overview@3x.png);
+}
+li.chat{
+     background-image: url(./Components/Images/chat@3x.png);
+}
+li.folders{
+  background-image: url(./Components/Images/folder@3x.png);
+}
+li.messages{
+  background-image: url(./Components/Images/message@3x.png);
+}
+li.settings{
+  background-image: url(./Components/Images/settings@3x.png);
+}
+
+/* Views */
+
+.views{
+  margin: 1rem 1.5rem;
+  /* width: 90%; */
+  font-size: 0.5rem;
+}
+
+
+section.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+progress{
+  width: 9rem;
+  margin-right: 0.9rem;
+}
+
+
+section.charts {
+  display: flex;
+}
+.chart, .terms{
+  padding: 0.96rem 1.4rem;
+  background-color: #fff;
+  border-radius: 1.9px;
+  border: solid 0.5px #ebedf8;
+}
+.chart h3{
+  margin: 0.4rem 0 1rem;
+}
+.graph, .pie{ 
+ background-size: contain;
+ background-repeat: no-repeat;
+
+}
+.graph{
+  width: 8.438rem;
+  height: 3.156rem;
+}
+.pie{
+  width: 3.406rem;
+  height: 3.406rem;
+  margin-left: 1rem;
+
+}
+.chart.blue .graph{
+  background-image: url(./Components/Images/graphblue@3x.png);
+}
+.chart.red .graph{
+  background-image: url(./Components/Images/graphred@3x.png);
+}
+.chart.blue .pie{
+  background-image: url(./Components/Images/pieblue@3x.png);
+}
+.chart.red .pie{
+  background-image: url(./Components/Images/piered@3x.png);
+}
+.followers span{
+  font-size: 0.844rem;
+  color: #37394c;
+}
+
+.data {
+  display: flex;
+}
+
+.terms{
+  min-width: 8.8rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.terms b{
+  padding-left: 0.8rem;
 }
