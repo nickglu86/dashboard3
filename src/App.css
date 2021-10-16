@@ -1,4 +1,5 @@
 * {
+  font-family: 'Lato', sans-serif;
   box-sizing: content-box;
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ header .logo{
 main{
   display: flex;
   background-color: #fafbfc;
-
+  height: 90vh;
 }
 ul.tabs{
   width: 2.656rem;
@@ -68,24 +69,22 @@ li.settings{
   /* width: 90%; */
   font-size: 0.5rem;
 }
-
-
+.view{
+  display: none;
+}
 section.intro {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0.5rem 0 1.28rem;
 }
 progress{
   width: 9rem;
   margin-right: 0.9rem;
 }
-
-
 section.charts {
   display: flex;
 }
-/* .chart, .terms{ */
 .box{
   padding: 0.96rem 1.4rem;
   background-color: #fff;
@@ -108,7 +107,6 @@ section.charts {
   width: 3.406rem;
   height: 3.406rem;
   margin-left: 1rem;
-
 }
 .chart.blue .graph{
   background-image: url(./Components/Images/graphblue@3x.png);
@@ -122,15 +120,17 @@ section.charts {
 .chart.red .pie{
   background-image: url(./Components/Images/piered@3x.png);
 }
+.followers{
+  margin: 0 0 0.6rem;
+}
 .followers span{
   font-size: 0.844rem;
   color: #37394c;
+  padding-right: 0.4rem;
 }
-
 .data {
   display: flex;
 }
-
 .terms{
   min-width: 8.8rem;
   display: flex;

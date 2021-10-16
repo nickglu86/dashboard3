@@ -1,8 +1,10 @@
 function Folders() {
     return (  
-        <div className="folders">
-            <h2>Folders</h2>
-        </div> 
+        <div class="view">
+            <section class="intro">
+               <h2>Folders</h2>
+            </section>
+        </div>
     );
 }
 

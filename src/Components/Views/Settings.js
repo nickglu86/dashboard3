@@ -1,8 +1,10 @@
 function Settings() {
     return (
-         <div className="settings">
-            <h2>Settings</h2>
-        </div> 
+        <div class="view">
+            <section class="intro">
+              <h2>Settings</h2>
+            </section>
+        </div>
        );   
 }
 

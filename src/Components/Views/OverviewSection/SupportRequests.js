@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const suppReq =  [
     {
       "name": "Cecilia Welch",
@@ -51,6 +53,7 @@ const suppReq =  [
 
 
 function SupportRequests() {
+    const [counter, setCounter] = useState(0)
     return ( 
         <section className="requests box">
             <h2>SupportRequests</h2>
@@ -75,6 +78,8 @@ function SupportRequests() {
                 ))}
             </div>
             <btn className="add">ADD</btn>
+            <div>{counter}</div>
+             <btn onClick={ () => setCounter(counter+1)}>+1</btn>
         </section>
      );
 }

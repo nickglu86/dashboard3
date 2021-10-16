@@ -1,7 +1,9 @@
 function Messages() {
     return (  
-        <div className="messages">
-            <h2>Messages</h2>
+        <div class="view">
+            <section class="intro">
+              <h2>Messages</h2>
+            </section>
         </div>
     );
 }

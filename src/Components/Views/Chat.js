@@ -1,7 +1,9 @@
 function Chat() {
     return ( 
-        <div className="chat">
-            <h2>Chat</h2>
+        <div class="view">
+            <section class="intro">
+                 <h2>Chat</h2>
+            </section>
         </div>
      );
 }

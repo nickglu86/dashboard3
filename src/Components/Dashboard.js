@@ -15,7 +15,10 @@ const TabsObj = {
 
 const getTabContent = tab => {
     const TabContent = TabsObj[tab];
-    return <TabContent />
+    console.log(tab);
+    console.log(TabContent);
+    //style={{display: this.state.showStore ? 'block' : 'none' }}
+     return <TabContent  style={{display:  'block'}} />
 }
 const Dashboard = () => {
     const [activeTab , setActiveTab] = useState(Object.keys(TabsObj)[0])
@@ -36,7 +39,10 @@ const Dashboard = () => {
                 )}
             </ul>
             <div className="views">
-                {getTabContent(activeTab)}
+                {Object.keys(TabsObj).map( tabContent =>(
+                    getTabContent(tabContent)
+                ))}
+                {/* {getTabContent(activeTab)} */}
             </div>                
         </main>
     );
