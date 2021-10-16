@@ -3,11 +3,12 @@ const Intro = props => {
     return (
         <section className="intro">
             <h2>Data Overview</h2>
-            <div>
+            <div className="progress">
                 <progress value={count} max="1000" />
-                <span> 
-                    <b>{count}</b> insertions needed to complete
-                 </span>
+                <div className='count'> 
+                    <b>{count}</b> 
+                    <span>insertions needed to complete </span>
+                 </div>
             </div>
         </section>
       );

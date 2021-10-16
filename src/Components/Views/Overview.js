@@ -1,14 +1,15 @@
 import overviewData from '../../initial_data.json';
+import addotinalData from '../../additional_data.json';
 import Chart from './OverviewSection/Chart';
 import Intro from './OverviewSection/Intro';
 import SupportRequests from './OverviewSection/SupportRequests';
 import Terms from './OverviewSection/Terms';
 
-const Overview = () => {
+const Overview = props => {
 
     const {general, charts, terms, supportRequests} = overviewData;
     return (
-        <div className="view">
+        <div className={`view ${props.class}` }>
             <Intro general={general} />
             <section className="charts">
                   {Object.keys(charts).map( chart => (
@@ -16,7 +17,7 @@ const Overview = () => {
                   ))}
                   <Terms terms={terms} />
             </section>
-            <SupportRequests />
+            <SupportRequests requestsList={supportRequests} addotinalData={addotinalData} />
         </div>
       );
 }

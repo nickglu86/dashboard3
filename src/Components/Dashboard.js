@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import Overview from './Views/Overview';
 import Chat from './Views/Chat';
 import Settings from './Views/Settings';
@@ -13,15 +13,21 @@ const TabsObj = {
     Settings
   };
 
-const getTabContent = tab => {
-    const TabContent = TabsObj[tab];
-    console.log(tab);
-    console.log(TabContent);
-    //style={{display: this.state.showStore ? 'block' : 'none' }}
-     return <TabContent  style={{display:  'block'}} />
-}
-const Dashboard = () => {
-    const [activeTab , setActiveTab] = useState(Object.keys(TabsObj)[0])
+
+const Dashboard = props => {
+    const [activeTab , setActiveTab] = useState(Object.keys(TabsObj)[0]);
+
+    useEffect(() => {
+            props.updateHeader(activeTab)
+      });
+
+    const getTabContent = tab => {
+        const TabContent = TabsObj[tab];
+        return <TabContent class={tab === activeTab ? tab.toLowerCase() : ''}/>
+    }
+    
+    
+
     return (  
         <main className="dashboard">
             <ul className="tabs">
