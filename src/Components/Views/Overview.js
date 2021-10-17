@@ -1,7 +1,7 @@
-import Intro from './OverviewSection/Intro';
-import Chart from './OverviewSection/Chart';
-import Requests from './OverviewSection/Requests';
-import Terms from './OverviewSection/Terms';
+import Intro from './OverviewComponents/Intro';
+import Chart from './OverviewComponents/Chart';
+import RequestsList from './OverviewComponents/RequestsList';
+import Terms from './OverviewComponents/Terms';
 
 import InitialData from '../../initial_data.json';
 import AdditionalData from '../../additional_data.json';
@@ -18,7 +18,7 @@ const Overview = ({activeClass}) => {
                   ))}
                 <Terms terms={terms} />
             </section>
-            <Requests reqList={supportRequests} additData={AdditionalData} />
+            <RequestsList reqList={supportRequests} additData={AdditionalData} />
         </div>
       );
 }

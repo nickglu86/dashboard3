@@ -5,7 +5,7 @@ import Settings from './Views/Settings';
 import Messages from './Views/Messages';
 import Folders from './Views/Folders';
 
-const TabsObj = {
+const views = {
     Overview,
     Chat,
     Folders,
@@ -13,36 +13,38 @@ const TabsObj = {
     Settings
   };
 
-const Dashboard = props => {
-    const [activeTab , setActiveTab] = useState(Object.keys(TabsObj)[0]);
+const viewsKeys =  Object.keys(views);
+
+const Dashboard = ({updateHeader}) => {
+    const [activeTab , setActiveTab] = useState(viewsKeys[0]);
 
     useEffect(() => {
-            props.updateHeader(activeTab)
+            updateHeader(activeTab);
     });
 
-    const getTabContent = (tab, index) => {
-        const View = TabsObj[tab];
+    const renderView = (label, index) => {
+        const View = views[label];
         return <View 
                 key={index} 
-                activeClass={tab === activeTab ? tab.toLowerCase() : ''}            
+                activeClass={label === activeTab ? label.toLowerCase() : ''}            
                 />
     }
 
     return (  
         <main className="dashboard">
-            <ul className="tabs">
-                {Object.keys(TabsObj).map(tab => (
+            <ul className={`tabs ${activeTab}`} >
+                {viewsKeys.map(label => (
                     <li
-                            key={tab}
-                            className={tab.toLowerCase()}
-                            onClick={() => setActiveTab(tab)}
+                            key={label}
+                            className={`${label.toLowerCase()}  ${label === activeTab ? 'active' : ''}`}
+                            onClick={() => setActiveTab(label)}
                     >
                     </li>
                 ))}
             </ul>
             <div className="views">
-                {Object.keys(TabsObj).map( 
-                    (tabContent, index) => getTabContent(tabContent,index)
+                {viewsKeys.map( 
+                    (label, index) => renderView(label,index)
                 )}
             </div>                
         </main>

@@ -99,27 +99,43 @@ ul.tabs li {
 	cursor: pointer;
 }
 
+li.overview.active {
+	background-image: url(./Components/Images/dashboard.svg);
+}
 li.overview {
-	background-image: url(./Components/Images/overview@3x.png);
+	background-image: url(./Components/Images/dashboard-off.svg);
 }
 
+li.chat.active {
+	background-image: url(./Components/Images/chat.svg);
+}
 li.chat {
-	background-image: url(./Components/Images/chat@3x.png);
+	background-image: url(./Components/Images/chat-off.svg);
 }
 
+li.folders.active {
+	background-image: url(./Components/Images/folder.svg);
+}
 li.folders {
-	background-image: url(./Components/Images/folder@3x.png);
+	background-image: url(./Components/Images/folder-off.svg);
+}
+
+
+li.messages.active {
+	background-image: url(./Components/Images/message.svg);
 }
 
 li.messages {
-	background-image: url(./Components/Images/message@3x.png);
+	background-image: url(./Components/Images/message-off.svg);
+}
+
+li.settings.active {
+	background-image: url(./Components/Images/cog.svg);
 }
 
 li.settings {
-	background-image: url(./Components/Images/settings@3x.png);
+	background-image: url(./Components/Images/cog-off.svg);
 }
-
-
 /* Views */
 
 .views {
@@ -368,9 +384,10 @@ button {
 
 section.box.other {
 	min-height: 200px;
-	font-size: 0.6rem;
-	color: #8a96a0;
 	padding: 2rem 1rem;
+	font-size: 0.6rem;
+	line-height: 1rem;
+	color: #8a96a0;
 }
 
 section.box.other h2 {
