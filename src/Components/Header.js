@@ -3,7 +3,7 @@ const Header = props => {
         <header>
                 <div className="logo" />
                 <span className="label">{props.label}</span>
-                <btn className="premium">Premium</btn>
+                <button className="premium">Premium</button>
         </header>
      );
 }

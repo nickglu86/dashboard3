@@ -1,9 +1,8 @@
-const Terms = props  => {   
-    const termsArr = props.terms;
+const Terms = ({terms})  => {   
     return ( 
         <div className="terms box">     
-                {termsArr.map( (term, index) => ( 
-                   <div className="term">
+                {terms.map( (term, index) => ( 
+                   <div className="term" key={index}>
                         <span >TERM {index + 1}</span>
                         <span>{term}</span>
                     </div>

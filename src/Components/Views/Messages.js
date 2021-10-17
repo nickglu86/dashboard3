@@ -1,7 +1,7 @@
-function Messages(props) {
+const Messages = ({activeClass}) => {
     return (  
-        <div className={`view ${props.class}`}>
-            <section class="intro">
+        <div className={`view ${activeClass}`}>
+            <section className="intro">
               <h2>Messages</h2>
             </section>
             <section className="box other">

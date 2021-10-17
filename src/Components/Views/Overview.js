@@ -1,23 +1,24 @@
-import overviewData from '../../initial_data.json';
-import addotinalData from '../../additional_data.json';
-import Chart from './OverviewSection/Chart';
 import Intro from './OverviewSection/Intro';
-import SupportRequests from './OverviewSection/SupportRequests';
+import Chart from './OverviewSection/Chart';
+import Requests from './OverviewSection/Requests';
 import Terms from './OverviewSection/Terms';
 
-const Overview = props => {
+import InitialData from '../../initial_data.json';
+import AdditionalData from '../../additional_data.json';
 
-    const {general, charts, terms, supportRequests} = overviewData;
+const Overview = ({activeClass}) => {
+    const {general, charts, terms, supportRequests} = InitialData;
+
     return (
-        <div className={`view ${props.class}` }>
+        <div className={`view ${activeClass}` }>
             <Intro general={general} />
             <section className="charts">
                   {Object.keys(charts).map( chart => (
                      <Chart key={chart}  chartType={chart} followers={charts[chart].followersCount} />
                   ))}
-                  <Terms terms={terms} />
+                <Terms terms={terms} />
             </section>
-            <SupportRequests requestsList={supportRequests} addotinalData={addotinalData} />
+            <Requests reqList={supportRequests} additData={AdditionalData} />
         </div>
       );
 }

@@ -1,9 +1,8 @@
- const Chart = props => {
-
-    const chartGeneral = props.chartType == 'general';
+ const Chart = ({chartType, followers}) => {
+    const chartGeneral = chartType === 'general';
     const chartTitle = chartGeneral ? 'General results' : 'Ratings by category';
     const chartTheme = chartGeneral ? 'blue' : 'red';
-    const followers = props.followers;
+    
     return(
         <div className={`chart box ${chartTheme}`} >
             <div className="chart-inner">
@@ -11,7 +10,7 @@
                 <div className="data">
                     <div>
                         <div className="followers" >
-                                <span> {followers.toLocaleString()} </span> Followers 
+                            <span> {followers.toLocaleString()} </span> Followers 
                         </div>
                         <div className="graph" />
                     </div>

@@ -1,7 +1,7 @@
-function Folders(props) {
+const Folders = ({activeClass}) => {
     return (  
-        <div className={`view ${props.class}`}>
-            <section class="intro">
+        <div className={`view ${activeClass}`}>
+            <section className="intro">
                <h2>Folders</h2>
             </section>
             <section className="box other">

@@ -48,7 +48,7 @@ header .label{
     color: #1880e7;
     border-bottom: solid 0.5px #1880e7;
 }
-btn.premium {
+button.premium {
   position: absolute;
   right: 1rem;
   width: 2.781rem;
@@ -60,6 +60,7 @@ btn.premium {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  border: none;
 }
 main{
   display: flex;
@@ -224,7 +225,12 @@ section.charts {
   font-weight: normal;
 }
 .requests{
-  position: relative;
+  position: relative;;
+}
+.requests-list {
+  max-height: 14rem;
+  overflow: unset;
+  overflow-x: hidden;
 }
 [class*='request-']{
   display: grid;
@@ -245,13 +251,16 @@ section.charts {
 .request-header{
   text-transform: uppercase;
   font-size: 0.327rem;
+  margin: 0.625rem 0 0 ;
 }
-
+.request-body{
+  position: relative;
+}
 .request-body .name{
   font-weight: 700;
   color: #354052;
 }
-.request-body btn {
+.request-body button {
   width: 2.031rem;
   height: 0.938rem;
   line-height: 0.9rem;
@@ -261,21 +270,23 @@ section.charts {
   background-color: #07f;
   text-align: center;
 }
-btn.sent{
+button.sent{
   pointer-events: none;
 }
-btn.unsent{
+button.unsent{
     color:  #07f;
     background-color: #fff;
 }
-btn.add{
-  top: 1.25rem;
+button.add{
+  position: absolute;
+  top: 1.1rem;
   right: 1.25rem;
   font-size: 0.469rem;
   color: #1880e7;
-  position: absolute;
+  border: none;
+  background: #fff;
 }
-btn{
+button{
   cursor: pointer;
 }
 .req-count{
@@ -346,6 +357,13 @@ section.box.other h2{
    }
    [class*='request-'] {
     grid-template-columns: none;
+   }
+   .request-body button{
+    position: absolute;
+    right: 10px;
+   }
+   .requests-list {
+    max-height: none;
    }
   
 }
