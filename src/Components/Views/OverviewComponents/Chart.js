@@ -1,4 +1,6 @@
- const Chart = ({chartType, followers}) => {
+import '../../../Styles/chart.css';
+
+const Chart = ({chartType, followers}) => {
     const chartGeneral = chartType === 'general';
     const chartTitle = chartGeneral ? 'General results' : 'Ratings by category';
     const chartTheme = chartGeneral ? 'blue' : 'red';

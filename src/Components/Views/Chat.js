@@ -1,4 +1,5 @@
-const Chat = ({activeClass}) => {
+const Chat = ({ activeClass }) => {
+    
     return ( 
         <div className={`view ${activeClass}`}>
             <section className="intro">

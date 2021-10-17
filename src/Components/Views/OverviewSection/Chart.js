@@ -1,4 +1,4 @@
- const Chart = ({chartType, followers}) => {
+ const Chart = ({ chartType, followers }) => {
     const chartGeneral = chartType === 'general';
     const chartTitle = chartGeneral ? 'General results' : 'Ratings by category';
     const chartTheme = chartGeneral ? 'blue' : 'red';

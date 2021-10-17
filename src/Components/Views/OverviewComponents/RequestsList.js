@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Request from "./Request";
 
+import '../../../Styles/requests.css';
+
 const RequestsList = ({reqList, additData}) => {
     const [requestsList, setRequestsList] = useState(reqList);
     const [additionalReqList, removeFromList] = useState(additData.supportRequests);

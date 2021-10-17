@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import './App.css';
 import Dashboard from './Components/Dashboard';
 import Header from './Components/Header';
+
+import './Styles/App.css';
 
 function App() {
   const [activeTab,setActiveTab] = useState('Overview');

@@ -1,4 +1,5 @@
 const Terms = ({terms})  => {   
+    
     return ( 
         <div className="terms box">     
                 {terms.map( (term, index) => ( 

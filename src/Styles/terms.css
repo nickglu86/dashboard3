@@ -1,0 +1,29 @@
+.terms {
+	min-width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: left;
+}
+
+.term {
+	min-width: 5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 0.39rem 0;
+	font-size: 0.375rem;
+	letter-spacing: 0.5px;
+}
+
+.terms span {
+	text-align: left;
+	min-width: 1.25rem;
+	color: #8a96a0;
+	font-weight: 700;
+}
+
+.terms span+span {
+	color: #000;
+	font-weight: normal;
+}

@@ -1,4 +1,4 @@
-const Request = ({request, index, updateStatus} ) => {
+const Request = ({ request, index, updateStatus }) => {
     const {name, email, timestamp, phoneNumber, city, status} = request;
 
     const getTime = timeStamp => {

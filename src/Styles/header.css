@@ -1,0 +1,48 @@
+header {
+	display: flex;
+	align-items: center;
+	height: 2.188rem;
+	padding: 0 0.25rem;
+	border: solid 0.5px #ebedf8;
+}
+
+header .logo {
+	height: 1.281rem;
+	width: 1.125rem;
+	margin: 0.5rem;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(../Images/logo@3x.png);
+}
+
+header .label {
+	height: 2.188rem;
+	margin-left: 10rem;
+	line-height: 2.188rem;
+	font-size: 0.469rem;
+	min-width: 3rem;
+	text-align: center;
+	color: #1880e7;
+	border-bottom: solid 0.5px #1880e7;
+}
+
+button.premium {
+	position: absolute;
+	right: 1rem;
+	width: 2.781rem;
+	height: 1rem;
+	line-height: 1rem;
+	border-radius: 2px;
+	background-color: #07f;
+	font-size: 0.438rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	border: none;
+}
+
+@media (max-width: 780px) {
+	header .label {
+		margin-left: 20px;
+	}
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Request from "./Request";
 
-const Requests = ({reqList, additData}) => {
+const RequestsList = ({reqList, additData}) => {
     const [requestsList, setRequestsList] = useState(reqList);
     const [additionalReqList, removeFromList] = useState(additData.supportRequests);
  
@@ -50,4 +50,4 @@ const Requests = ({reqList, additData}) => {
      );
 }
 
-export default Requests;
+export default RequestsList;

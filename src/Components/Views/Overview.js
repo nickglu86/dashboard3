@@ -3,10 +3,10 @@ import Chart from './OverviewComponents/Chart';
 import RequestsList from './OverviewComponents/RequestsList';
 import Terms from './OverviewComponents/Terms';
 
-import InitialData from '../../initial_data.json';
-import AdditionalData from '../../additional_data.json';
+import InitialData from '../../Data/initial_data.json';
+import AdditionalData from '../../Data/additional_data.json';
 
-const Overview = ({activeClass}) => {
+const Overview = ({ activeClass }) => {
     const {general, charts, terms, supportRequests} = InitialData;
 
     return (

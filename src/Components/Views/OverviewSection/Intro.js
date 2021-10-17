@@ -1,5 +1,6 @@
-const Intro = props => {
-    const { insertionsCount : count } = props.general;
+const Intro = ({ general }) => {
+    const { insertionsCount : count } = general;
+    
     return (
         <section className="intro">
             <h2>Data Overview</h2>

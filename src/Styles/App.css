@@ -1,0 +1,39 @@
+* {
+	font-family: 'Lato', sans-serif;
+	box-sizing: content-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+html {
+	font-size: 33px;
+}
+
+@media (max-width: 1680px) {
+	html {
+		font-size: 31px;
+	}
+}
+
+@media (max-width: 1420px) {
+	html {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1290px) {
+	html {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 780px) {
+	html {
+		font-size: 31px;
+	}
+}
+
+button {
+	cursor: pointer;
+}

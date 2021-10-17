@@ -1,0 +1,114 @@
+
+.requests {
+	position: relative;
+	;
+}
+
+.requests-list {
+	max-height: 12rem;
+	overflow: unset;
+	overflow-x: hidden;
+}
+
+[class*='request-'] {
+	display: grid;
+	grid-template-columns: 15% 24% 15% 20% 20% 6%;
+	font-size: 0.469rem;
+	color: #8a96a0;
+	margin: 0.625rem 0;
+	line-height: 0.938rem;
+}
+
+[class*='request-'],
+.followers,
+.chart h3 {
+	font-size: 0.469rem;
+}
+
+.intro h2,
+.requests h2 {
+	font-size: 0.656rem;
+	letter-spacing: 0.2px;
+}
+
+.request-header {
+	text-transform: uppercase;
+	font-size: 0.327rem;
+	margin: 0.625rem 0 0;
+}
+
+.request-body {
+	position: relative;
+}
+
+.request-body .name {
+	font-weight: 700;
+	color: #354052;
+}
+
+.request-body button {
+	width: 2.031rem;
+	height: 0.938rem;
+	line-height: 0.9rem;
+	border: solid 0.5px #ebedf8;
+	color: #fff;
+	border-radius: 2px;
+	background-color: #07f;
+	text-align: center;
+}
+
+button.sent {
+	pointer-events: none;
+}
+
+button.unsent {
+	color: #07f;
+	background-color: #fff;
+}
+
+button.add {
+	position: absolute;
+	top: 1.1rem;
+	right: 1.25rem;
+	font-size: 0.469rem;
+	color: #1880e7;
+	border: none;
+	background: #fff;
+}
+
+.req-count {
+	position: absolute;
+	bottom: -1.43rem;
+	left: 0;
+	color: #8a96a0;
+	font-size: 0.475rem;
+}
+
+.req-count span {
+	color: #354052;
+}
+
+@media (max-width: 1080px) {
+	[class*='request-'] {
+		grid-template-columns: 15% 24% 15% 20% 18% 6%;
+	}
+}
+
+@media (max-width: 780px) {
+	.request-header {
+		display: none;
+	}
+	[class*='request-'] {
+		grid-template-columns: none;
+	}
+	.request-body button {
+		position: absolute;
+		right: 10px;
+	}
+	.requests-list {
+		max-height: none;
+	}
+	.count {
+		text-align: center;
+	}
+}

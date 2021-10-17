@@ -1,4 +1,5 @@
-const Folders = ({activeClass}) => {
+const Folders = ({ activeClass }) => {
+    
     return (  
         <div className={`view ${activeClass}`}>
             <section className="intro">

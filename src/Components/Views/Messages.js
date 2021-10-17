@@ -1,4 +1,5 @@
-const Messages = ({activeClass}) => {
+const Messages = ({ activeClass }) => {
+    
     return (  
         <div className={`view ${activeClass}`}>
             <section className="intro">

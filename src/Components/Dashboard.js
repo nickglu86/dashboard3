@@ -1,9 +1,12 @@
 import { useState, useEffect} from "react";
+
 import Overview from './Views/Overview';
 import Chat from './Views/Chat';
 import Settings from './Views/Settings';
 import Messages from './Views/Messages';
 import Folders from './Views/Folders';
+
+import '../Styles/dashboard.css';
 
 const views = {
     Overview,
@@ -15,7 +18,7 @@ const views = {
 
 const viewsKeys =  Object.keys(views);
 
-const Dashboard = ({updateHeader}) => {
+const Dashboard = ({ updateHeader }) => {
     const [activeTab , setActiveTab] = useState(viewsKeys[0]);
 
     useEffect(() => {
@@ -36,7 +39,7 @@ const Dashboard = ({updateHeader}) => {
                 {viewsKeys.map(label => (
                     <li
                             key={label}
-                            className={`${label.toLowerCase()}  ${label === activeTab ? 'active' : ''}`}
+                            className={`${label.toLowerCase()} ${label === activeTab ? 'active' : ''}`}
                             onClick={() => setActiveTab(label)}
                     >
                     </li>
