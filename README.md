@@ -19,13 +19,13 @@ There are a lot of things that can be imporved in the this app, the main focus/e
 
 
 ### Things TO DO Differently
-* Create Global State / Store for min. functionality of data saving, will represent real time behavior.
+* Create Global State with Context/Redux Store for min. functionality of data saving, will represent real time behavior.
 * Views/Tabs content should rendered on demand not with display block/none.
 * Tab icons should be preloaded.
 
 
 ### Parts not handled/not handled optimally
-* App state - optimaly  be implemented with a Global state/or Store in order to store and handle the data from JSON files(. Curently handled with useState hook in Overview components.
+* App state - optimaly be implemented with a Global state/or Store in order to store and handle the data in a single place if also other views load additional data . Curently handled with useState hook in Overview components. 
 
 * Tabs Content Views show/hide implemented with css class toggle, optimally would be implemented with rendering each view component on demand when relevant tab icon clicked.
 
