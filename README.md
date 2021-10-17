@@ -14,7 +14,7 @@ React-App - basic dashboard interface functionality.
 
 
 ### Solution thought process
-The app mainly focusing on rendering  Overview Tab content from JSON file that represent dynamic data from JSON file that is stored locally. The Data being rendered  and can be modified partially. New data can be added in a form of 'Support Reqests' from additional json file.
+The app mainly focusing on rendering  Overview Tab content from JSON file that represent dynamic data from JSON file that is stored locally. The data is being rendered  and can be modified partially. New data can be added in a form of 'Support Reqests' from additional json file.
 There are a lot of things that can be imporved in the this app, the main focus/effort was on implementing only the part that was required.
 
 
