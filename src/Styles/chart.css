@@ -25,9 +25,9 @@ section.charts {
 }
 
 .pie {
-	width: 3.6rem;
-	height: 3.6rem;
-	margin: 0 0 0 1.2rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin: 0 0 0 1.7rem;
 }
 
 .chart.blue .graph {
