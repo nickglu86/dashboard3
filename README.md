@@ -1,6 +1,6 @@
 # Dashboard - Demo
 
-* [nickglu86.github.io/dashboard3/](https://nickglu86.github.io/dashboard3/)
+[nickglu86.github.io/dashboard3/](https://nickglu86.github.io/dashboard3/)
 
 ## Overview
 React-App - basic dashboard interface functionality.
@@ -10,7 +10,7 @@ React-App - basic dashboard interface functionality.
 2. App should be responsive.
 3. User should be able to send 'Support Reqests' and add new requests to the list.
 4. Global state not required due for demo implementation only of Overview section.
-5. No server needed.
+. No server needed.
 
 
 ### Solution thought process
