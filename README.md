@@ -3,7 +3,7 @@
 [nickglu86.github.io/dashboard3/](https://nickglu86.github.io/dashboard3/)
 
 ## Overview
-React-App -  Dashboard UI with basical functionality.
+React-App -  Dashboard UI with basic functionality.
 
 ### Engineer Assumptions
 1. Main view was built according to a provided design .
